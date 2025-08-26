@@ -28,8 +28,8 @@ services:
     volumes:
       - 'shared:/kube'
       - '/var/run/docker.sock:/var/run/docker.sock'
-      - "ov-cache:/home/ubuntu/.cache/ov:rw"
-      - "ov-local-share:/home/ubuntu/.local/share/ov/:rw"
+      - "ov-cache:/home/root/.cache/ov:rw"
+      - "ov-local-share:/home/root/.local/share/ov/:rw"
     privileged: true
     environment:
       - CUDA_VISIBLE_DEVICES=0

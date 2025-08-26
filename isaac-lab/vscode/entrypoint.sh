@@ -15,6 +15,6 @@
 # limitations under the License.
 set -eux
  
-WORKSPACE_DIR=${WORKSPACE_DIR:-$HOME/workspace}
+WORKSPACE_DIR=${WORKSPACE_DIR:-/workspace}
 code-server --bind-addr=127.0.0.1:8080 \
     "${WORKSPACE_DIR}"

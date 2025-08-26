@@ -29,7 +29,7 @@ If you're creating a custom Launchable, these ports can opened from the Brev int
 
 ## Isaac Sim
 
-To run [isaac-sim@4.5.0](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim) headless and stream it to the [web-viewer-sample](https://github.com/NVIDIA-Omniverse/web-viewer-sample).
+To run [isaac-sim@5.0.0](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim) headless and stream it to the [web-viewer-sample](https://github.com/NVIDIA-Omniverse/web-viewer-sample).
 
 ```
 cd isaac-sim
