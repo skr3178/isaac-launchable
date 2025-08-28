@@ -15,6 +15,7 @@
 FROM nvcr.io/nvidia/isaac-lab:2.2.0
 
 USER root
+ENV OMNI_KIT_ALLOW_ROOT=1
 
 RUN apt update && \
     apt install -y \

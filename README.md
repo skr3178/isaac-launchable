@@ -17,6 +17,31 @@ The project includes:
 
 Through this project, users can interact with Isaac Sim and Isaac Lab purely from a web browser, with one tab running Visual Studio Code and terminal commands such as headless Isaac Sim instances, and another tab representing the Kit App Streaming and user interface for Isaac Sim.
 
+### Quickstart Guide
+This guide will get you started with a Visual Studio Code instance with Isaac Lab preinstalled, and an in-browser user interface provided by Kit App Streaming.
+
+1. Click the Deploy Now button below
+[![ Click here to deploy.](https://brev-assets.s3.us-west-1.amazonaws.com/nv-lb-dark.svg)](https://brev.nvidia.com/launchable/deploy?launchableID=env-31ezDWyp4LvtDQr5rUhAWOUMFhn)
+
+2. Wait for the the instance to be fully ready on Brev. The first time, this will take a while. Wait for it to be running, built, and for the setup script is complete.
+3. Scroll down to the TCP/UDP ports section of the Brev instance page.
+4. Click the link associated with port 80 - this will take you to Visual Studio Code Server.
+5. The default password is `password`. This can be modified.
+6. Continue with the [README.md](https://github.com/isaac-sim/isaac-launchable/blob/main/isaac-lab/vscode/README.md) instructions inside Visual Studio code. A summary is provided below.
+
+Now you can run Isaac Lab as normal, unless you need to see the UI of Isaac Sim (for example, when evaluating a policy)
+To do this:
+1. Add these additional arguments to the Isaac Lab command `--kit_args="--no-window --enable omni.kit.livestream.webrtc"`.
+2. Open a new tab in your browser.
+3. Visit the same address as the Visual Studio Code server, but with a `/viewer` path appended.
+
+Example: 
+
+VSCode - `ec2.something.something.amazonaws.com` at port 80
+
+Isaac Sim UI - `ec2.something.something.amazonaws.com/viewer`
+
+
 ### Required Ports
 The following ports need to be opened, for both the Visual Studio container and for Kit App Streaming.
 ```
