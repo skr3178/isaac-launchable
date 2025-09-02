@@ -32,7 +32,7 @@ This guide will get you started with a Visual Studio Code instance with Isaac La
 Once the environment is up, use Isaac Lab as normal. If the Isaac Sim UI is needed (e.g., for policy evaluation), enable streaming as described below.
 
 To run an Isaac Lab sample:
-`/workspace/isaaclab/isaaclab.sh -p "scripts/tutorials/00_sim/create_empty.py" --kit_args="--no-window --enable omni.kit.livestream.webrtc"`
+`./isaaclab/isaaclab.sh -p "isaaclab/scripts/tutorials/00_sim/create_empty.py" --kit_args="--no-window --enable omni.kit.livestream.webrtc"`
 
 ### View the Isaac Sim UI in the browser
 To run an Isaac sample:
