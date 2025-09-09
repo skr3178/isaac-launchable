@@ -1,3 +1,5 @@
+![Example usage of Isaac Launchable](images/IsaacLaunchableDemo_GitHub_wide.gif)
+
 # Isaac Launchable
 
 Isaac Launchable offers a simplified approach to installing and using [Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/index.html), the NVIDIA framework for robot learning.
@@ -52,7 +54,7 @@ Note how this is similar to the workstation command for launching Isaac Sim, but
 3. Open a new browser tab to view the UI.
 4. In this tab, paste the same address as the Visual Studio Code server, changing the end of the URL to: `/viewer`
 - Example: if VSCode is at `ec2.something.amazonaws.com`, then the Isaac Sim UI can be accessed at `ec2.something.amazonaws.com/viewer`
-5. After a few seconds you should see the UI in the viewer tab.
+5. After a few seconds you should see the UI in the viewer tab. The first launch may take much longer as shaders are cached.
 6. On subsequent relaunches, simply refresh this tab to see the UI.
 
 
@@ -82,7 +84,7 @@ This will launch Isaac Sim. Note how we added the `--kit_args` since we'll want 
 - Example: if VSCode is hosted at `ec2.something.amazonaws.com`, then the Isaac Sim UI can be accessed at `ec2.something.amazonaws.com/viewer` - note the `/viewer` addition.
 > [!NOTE]
 > If you already have a viewer tab open, simply refresh it when the app is ready.
-5. Wait a few seconds for the stream to start.
+5. Wait a few seconds for the stream to start. The first launch may take much longer as shaders are cached.
 6. To stop the process, press **CTRL+C** in the terminal.
 
 > [!IMPORTANT]
