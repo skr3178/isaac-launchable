@@ -2,11 +2,13 @@
 
 # Isaac Launchable
 
-Isaac Launchable offers a simplified approach to installing and using [Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/index.html), the NVIDIA framework for robot learning.
+Isaac Launchable offers a simplified approach to installing and using [Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/index.html) and [Isaac Sim](https://github.com/isaac-sim/IsaacSim).
 
-The "Launchable" name refers to [NVIDIA Brev](https://developer.nvidia.com/brev) Launchables, which are the intended use of this repository. Launchables are preconfigured, fully optimized compute and software environments. They allow users to start projects without extensive setup or configuration.
+Through this project, users can interact with Isaac Sim and Isaac Lab purely from a web browser, with one tab running Visual Studio Code for development and command execution, and another tab providing the streamed user interface for Isaac Sim.
 
-Isaac Lab is built upon Isaac Sim, the NVIDIA simulation application for robotics applications. Isaac Sim can both be launched separately, or from the context of Isaac Lab using the `--sim` flag.
+Launchables are provided by [NVIDIA Brev](https://developer.nvidia.com/brev), using this repo as a template. Launchables are preconfigured, fully optimized compute and software environments. They allow users to start projects without extensive setup or configuration.
+
+Isaac Lab is built upon Isaac Sim, the NVIDIA simulation framework for robotics. Isaac Sim can both be launched alone, or from the context of Isaac Lab to enable robot learning.
 
 ## What this project contains
 The installation steps for Isaac Lab are automated via Docker, such that it can be used locally, or be deployed on services such as NVIDIA Brev and run with cloud resources.
@@ -16,8 +18,6 @@ The project includes:
 - Isaac Lab pre-installed
 - Isaac Sim pre-installed
 - an Omniverse Kit App Streaming client, based on the [web-viewer-sample](https://github.com/NVIDIA-Omniverse/web-viewer-sample) project.
-
-Through this project, users can interact with Isaac Sim and Isaac Lab purely from a web browser, with one tab running Visual Studio Code and terminal commands such as headless Isaac Sim instances, and another tab representing the Kit App Streaming and user interface for Isaac Sim.
 
 ## Quickstart Guide
 This guide will get you started with a Visual Studio Code instance with Isaac Lab preinstalled, and an in-browser user interface provided by Kit App Streaming.
@@ -42,7 +42,9 @@ In short, the commands to run Isaac Lab and Isaac Sim are similar to workstation
 The top-level README.md file in the dev environment contains a shortened version of the instructions below.
 
 
-## Running Isaac Sim - Detailed Guide
+## Detailed Guides
+
+### Running Isaac Sim - Detailed Guide
 
 1. Run the following command: 
 ```
@@ -97,7 +99,7 @@ If you're new to Isaac Lab, here are some ideas to try:
 - Take the introductory Isaac Lab courses: "Train Your First Robot With Isaac Lab" and "Train your Second Robot With Isaac Lab" available [here](https://www.nvidia.com/en-us/learn/learning-path/robotics/)
 - Explore the Isaac Lab [Walkthrough](https://isaac-sim.github.io/IsaacLab/main/source/setup/walkthrough/index.html)
 
-## Running Locally or Creating Your Own Launchable
+## Creating Your Own Launchable
 
 If you'd like a Launchable with more compute, or other custom features, you can fork this repo and / or use this repo but configure a custom Launchable for your projects.
 
