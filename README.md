@@ -1,3 +1,14 @@
+## SKR NOTES
+Add this post script when starting the container on Brev:
+
+#!/bin/bash
+git clone https://github.com/isaac-sim/isaac-launchable
+cd isaac-launchable/isaac-lab
+docker compose up -d
+
+
+
+
 ![Example usage of Isaac Launchable](images/IsaacLaunchableDemo_GitHub_wide.gif)
 
 # Isaac Launchable
